@@ -8,7 +8,7 @@ var client = new Twitter({
 });
 
 
-var followArray = ['902926941413453824','961445378','971512101809274882'];
+var followArray = ['902926941413453824','961445378','971512101809274882','877807935493033984'];
 var followString = followArray.join(',');
 
 var stream = client.stream('statuses/filter', {follow: followString});
