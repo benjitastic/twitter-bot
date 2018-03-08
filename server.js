@@ -20,7 +20,7 @@ stream.on('data', function(event) {
       status: '@' + event.user.screen_name + '🚨 DO NOT SEND CRYPTO 🚨 Any accounts promising to send you more crypto in exchange are 100% fake. Even if they look real.',
       in_reply_to_status_id: event.id_str
     }, function(error, tweet, response) {
-      // console.log("TWEETED");
+      console.log("TWEETED");
       if (!error) {
         // console.log(tweet);
       }
