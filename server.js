@@ -34,9 +34,15 @@ var followString = followArray.join(',');
 
 var messages = [
   "🚨 DO NOT SEND CRYPTO 🚨 Any accounts promising to send you more crypto in exchange are 100% fake. Even if they look real.",
-  "🚨 SCAM ALERT 🚨 Is somebody on twitter promising to send you crypto? Don't. It's 100% a scam even if it looks legit.",
-  "🚨 GIVEAWAYS ARE ALL SCAMS 🚨 Don't fall for them. If somebody on twitter says they will give you crypto it's not real.",
-  "🚨 Don't get scammed! 🚨 People on twitter telling you to send them crypto in return for more crypto are all scammers."
+  "🚨 SCAM ALERT 🚨 Is somebody on twitter promising to send you more crypto in return? Don't. It's 100% a scam even if it looks legit.",
+  "🚨 WARNING WARNING 🚨 So many scammers! NEVER send your crypto to anybody on twitter even if it looks like a legitimate account.",
+  "🚨 FAKE ACCOUNTS ALERT 🚨 Fake accounts look legitimate and will ask for your crypto in exchange for more crypto. Don't fall for it.",
+  "🚨 HIDE YOUR CRYPTO HIDE UR WIFE 🚨 There will be scammers replying to this tweet telling you to send them crypto. Don't.",
+  "🚨 TOO GOOD TO BE TRUE? 🚨 Yes. Yes. Yes. Don't send your crypto to addresses from people you don't know on Twitter. They are fake accounts that look real.",
+  "🚨 FREE GIVEAWAYS ARE SCAMS 🚨 Don't fall for them. If somebody on twitter says they will give you crypto it's not real.",
+  "🚨 WTF!? 🚨 How are people still falling for these scammers? If anybody in these comments tells you to send them crypto DO NOT. It's a fake account designed to look real.",
+  "🚨 SCAMS 🚨 People on twitter telling you to send them crypto in return for more crypto are all scammers.",
+  "🚨 DING DONG 🚨 Scam patrol here. There will be fake accounts replying to this tweet telling you to send your crypto. Don't. You will lose it. These accounts are fake."
 ];
 
 var stream = client.stream('statuses/filter', {follow: followString});
