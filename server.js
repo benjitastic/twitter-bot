@@ -7,8 +7,19 @@ var client = new Twitter({
   access_token_secret: 'AebYP0MwCURQETUqwV3hvS8Sh21XKXNOeAheSje4jQT6E'
 });
 
-
-var followArray = ['902926941413453824','961445378','971512101809274882','877807935493033984'];
+var followArray = [
+  '902926941413453824',
+  '961445378',
+  '971512101809274882',
+  '877807935493033984',
+  '14338147',
+  '1399148563',
+  '28582680',
+  '295218901',
+  '886832413',
+  '2309637680',
+  '352518189'
+];
 var followString = followArray.join(',');
 
 var stream = client.stream('statuses/filter', {follow: followString});
