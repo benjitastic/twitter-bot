@@ -1,10 +1,10 @@
 var Twitter = require('twitter');
  
 var client = new Twitter({
-  consumer_key : "",
-  consumer_secret : "",
-  access_token_key: "",
-  access_token_secret: ""
+  consumer_key : "b4SDLmBN9q7HiRLILlyPede1Z",
+  consumer_secret : "6aZ2YDzQIWUS7GeEp9DlO0qzqYkF5yhepudK4llRMPPshR3fdr",
+  access_token_key: '971512800013987841-jd4UpIOSTIiPBdMqQ7PljpGuz45uaKB',
+  access_token_secret: 'AebYP0MwCURQETUqwV3hvS8Sh21XKXNOeAheSje4jQT6E'
 });
 
 var followArray = [
