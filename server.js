@@ -18,14 +18,15 @@ var followArray = [
   '295218901',
   '886832413',
   '2309637680',
-  '352518189'
+  '352518189',
+  '103451046'
 ];
 var followString = followArray.join(',');
 
 var stream = client.stream('statuses/filter', {follow: followString});
 stream.on('data', function(event) {
 
-  console.log('data', data);
+  console.log('data', event);
 
   //if(!event.in_reply_to_status_id_str && followArray.indexOf(event.user.id_str) > -1) { //only include tweets from the actual user
   if(followArray.indexOf(event.user.id_str) > -1) { //only include tweets from the actual user
