@@ -28,8 +28,8 @@ stream.on('data', function(event) {
 
   console.log('data', event);
 
-  //if(!event.in_reply_to_status_id_str && followArray.indexOf(event.user.id_str) > -1) { //only include tweets from the actual user
-  if(followArray.indexOf(event.user.id_str) > -1) { //only include tweets from the actual user
+  if(!event.in_reply_to_status_id_str && followArray.indexOf(event.user.id_str) > -1) { //only include tweets from the actual user
+  // if(followArray.indexOf(event.user.id_str) > -1) { //only include tweets from the actual user
 
     client.post('statuses/update', {
       status: '@' + event.user.screen_name + '🚨 DO NOT SEND CRYPTO 🚨 Any accounts promising to send you more crypto in exchange are 100% fake. Even if they look real.',
