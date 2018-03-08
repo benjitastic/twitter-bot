@@ -45,7 +45,7 @@ var messages = [
   "🚨 DING DONG 🚨 Scam patrol here. There will be fake accounts replying to this tweet telling you to send your crypto. Don't. You will lose it. These accounts are fake."
 ];
 
-var stream = client.stream('statuses/filter', {follow: followString});
+var stream = client.stream('statuses/filter', {follow: followString, low: 'low'});
 stream.on('data', function(event) {
 
   console.log('data', event);
