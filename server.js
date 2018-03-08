@@ -53,15 +53,18 @@ stream.on('data', function(event) {
   if(!event.in_reply_to_status_id_str && followArray.indexOf(event.user.id_str) > -1) { //only include tweets from the actual user
   // if(followArray.indexOf(event.user.id_str) > -1) { //only include tweets from the actual user
 
+    console.log("Will tweet");
+
     var rand = messages[Math.floor(Math.random() * messages.length)];
 
     client.post('statuses/update', {
       status: '@' + event.user.screen_name + ' ' + rand,
       in_reply_to_status_id: event.id_str
     }, function(error, tweet, response) {
-      console.log("TWEETED");
-      if (!error) {
-        // console.log(tweet);
+      if (error) {
+        console.log("Tweet error", error);
+      } else {
+        console.log("Tweet successful");
       }
     });
 
