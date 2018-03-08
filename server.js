@@ -27,6 +27,7 @@ stream.on('data', function(event) {
 
   console.log('data', data);
 
+  //if(!event.in_reply_to_status_id_str && followArray.indexOf(event.user.id_str) > -1) { //only include tweets from the actual user
   if(followArray.indexOf(event.user.id_str) > -1) { //only include tweets from the actual user
 
     client.post('statuses/update', {
@@ -44,5 +45,6 @@ stream.on('data', function(event) {
 });
  
 stream.on('error', function(error) {
+  console.log('error', error);
   // throw error;
 });
