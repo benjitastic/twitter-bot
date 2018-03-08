@@ -40,7 +40,7 @@ var messages = [
   "🚨 HIDE YOUR CRYPTO HIDE UR WIFE 🚨 There will be scammers replying to this tweet telling you to send them crypto. Don't.",
   "🚨 TOO GOOD TO BE TRUE? 🚨 Yes. Yes. Yes. Don't send your crypto to addresses from people you don't know on Twitter. They are fake accounts that look real.",
   "🚨 FREE GIVEAWAYS ARE SCAMS 🚨 Don't fall for them. If somebody on twitter says they will give you crypto it's not real.",
-  "🚨 WTF!? 🚨 How are people still falling for these scammers? If anybody in these comments tells you to send them crypto DO NOT. It's a fake account designed to look real.",
+  "🚨 WTF!? 🚨 How are people still falling for these scammers? If anybody in these replies tells you to send them crypto DO NOT. It's a fake account designed to look real.",
   "🚨 SCAMS 🚨 People on twitter telling you to send them crypto in return for more crypto are all scammers.",
   "🚨 DING DONG 🚨 Scam patrol here. There will be fake accounts replying to this tweet telling you to send your crypto. Don't. You will lose it. These accounts are fake."
 ];
