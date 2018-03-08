@@ -25,6 +25,8 @@ var followString = followArray.join(',');
 var stream = client.stream('statuses/filter', {follow: followString});
 stream.on('data', function(event) {
 
+  console.log('data', data);
+
   if(followArray.indexOf(event.user.id_str) > -1) { //only include tweets from the actual user
 
     client.post('statuses/update', {
